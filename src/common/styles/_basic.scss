@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-blend-mode: screen;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-grey-dark-2,
+      $color-grey-light-2
+    ),
+    url("./background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  main {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
