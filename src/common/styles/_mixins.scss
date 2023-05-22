@@ -1,0 +1,12 @@
+@mixin sectionBase {
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: $border;
+  box-shadow: $shadow;
+  background-color: $color-grey-light;
+
+  @media (max-width: 767px) {
+    width: 90%;
+  }
+}
