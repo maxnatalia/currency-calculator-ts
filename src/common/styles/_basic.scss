@@ -14,8 +14,8 @@ body {
   background-blend-mode: screen;
   background-image: linear-gradient(
       to right bottom,
-      $color-grey-dark-2,
-      $color-grey-light-2
+      $color-grey-medium,
+      $color-grey-light
     ),
     url("./background.png");
   background-repeat: no-repeat;
@@ -24,8 +24,10 @@ body {
   position: relative;
 
   main {
-    min-height: 100vh;
+    min-height: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
