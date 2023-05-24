@@ -1,0 +1,30 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+
+  &__img {
+    margin: 20px;
+    border: 10px solid $color-primary-dark;
+    border-top: 10px solid $color-primary-light;
+    border-radius: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    animation: spin 2s linear infinite;
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
