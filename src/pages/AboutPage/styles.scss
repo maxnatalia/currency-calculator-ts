@@ -1,0 +1,16 @@
+.article {
+  padding: 40px;
+
+  &__paragraph {
+    padding: 10px 5px;
+    line-height: 2.1;
+  }
+
+  &__link {
+    @include linkText;
+  }
+
+  @media (max-width: 767px) {
+    padding: 10px;
+  }
+}
