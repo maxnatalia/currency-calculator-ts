@@ -1,0 +1,16 @@
+.clock {
+  padding: 20px;
+
+  &__paragraph {
+    letter-spacing: 3px;
+  }
+
+  &__span {
+    font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
