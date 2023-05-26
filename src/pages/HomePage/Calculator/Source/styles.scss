@@ -1,0 +1,8 @@
+.source {
+  text-align: center;
+  padding: 20px;
+
+  &__link {
+    @include linkText;
+  }
+}
