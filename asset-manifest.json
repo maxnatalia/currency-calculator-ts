@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/currency-calculator-ts/static/css/main.073c9b0a.css",
-    "main.js": "/currency-calculator-ts/static/js/main.bb29dc0c.js",
+    "main.css": "/currency-calculator-ts/static/css/main.33a0ce52.css",
+    "main.js": "/currency-calculator-ts/static/js/main.6aaea8ec.js",
     "static/js/787.2dd3ca02.chunk.js": "/currency-calculator-ts/static/js/787.2dd3ca02.chunk.js",
-    "static/media/logo.svg": "/currency-calculator-ts/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/background.png": "/currency-calculator-ts/static/media/background.fc0619da85f39bb82bbe.png",
+    "static/media/gitHub.svg": "/currency-calculator-ts/static/media/gitHub.685c0e4a102e7b27f086c04788da70ba.svg",
     "index.html": "/currency-calculator-ts/index.html",
-    "main.073c9b0a.css.map": "/currency-calculator-ts/static/css/main.073c9b0a.css.map",
-    "main.bb29dc0c.js.map": "/currency-calculator-ts/static/js/main.bb29dc0c.js.map",
+    "static/media/linkedIn.svg": "/currency-calculator-ts/static/media/linkedIn.856fea87a0beddb4da5b790b2aa4f718.svg",
+    "main.33a0ce52.css.map": "/currency-calculator-ts/static/css/main.33a0ce52.css.map",
+    "main.6aaea8ec.js.map": "/currency-calculator-ts/static/js/main.6aaea8ec.js.map",
     "787.2dd3ca02.chunk.js.map": "/currency-calculator-ts/static/js/787.2dd3ca02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.bb29dc0c.js"
+    "static/css/main.33a0ce52.css",
+    "static/js/main.6aaea8ec.js"
   ]
 }
