@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
-    <section className="sectionError">
+    <div className="error">
       <h2>ErrorPage</h2>
-      <p className="sectionError__paragraph">Sorry, something went wrong...</p>
-      <Link to="/" className="sectionError__button">
+      <p className="error__paragraph">Sorry, something went wrong...</p>
+      <Link to="/" className="error__button">
         Back Home
       </Link>
-    </section>
+    </div>
   );
 };
 
