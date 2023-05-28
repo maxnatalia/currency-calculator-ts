@@ -1,12 +1,71 @@
 @mixin sectionBase {
-  width: 70%;
+  max-width: 90%;
   margin: 20px auto;
   padding: 10px 20px;
   border-radius: $border;
   box-shadow: $shadow;
   background-color: $color-grey-light;
+}
+
+@mixin linkText {
+  text-decoration: none;
+  font-weight: 600;
+  color: $color-primary-dark;
+  border-bottom: 2px solid transparent;
+  transition: $transition;
+
+  &:hover {
+    color: $color-primary-light;
+    border-bottom: 2px solid $color-primary-light;
+  }
+}
+
+@mixin button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 20px;
+  background-color: $color-primary-dark;
+  color: $color-grey-dark;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: $border;
+  border: none;
+  box-shadow: $shadow;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
+
+@mixin fieldBox {
+  min-width: 60%;
+  padding: 10px;
+  outline: 0.5px solid $color-grey-light;
+  border-radius: $border;
+  box-shadow: $shadow;
+
+  &:focus {
+    outline: 2px solid $color-primary-dark;
+  }
 
   @media (max-width: 767px) {
-    width: 90%;
+    width: 80%;
+  }
+}
+
+@mixin labelField {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 5px;
   }
 }
