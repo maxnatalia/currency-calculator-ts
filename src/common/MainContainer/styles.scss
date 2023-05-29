@@ -1,0 +1,10 @@
+main {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  @include sectionBase;
+  position: relative;
+}
