@@ -5,7 +5,11 @@ interface MainContainerProps {
 }
 
 const MainContainer = ({ children }: MainContainerProps) => {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <section>{children}</section>
+    </main>
+  );
 };
 
 export default MainContainer;
