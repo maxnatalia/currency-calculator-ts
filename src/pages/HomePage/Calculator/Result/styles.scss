@@ -1,0 +1,33 @@
+.result {
+  padding: 40px;
+  margin: 0 auto;
+
+  &__box {
+    border-radius: $border;
+    border: 2px solid $color-primary-dark;
+    box-shadow: $shadow;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 20px;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: $border;
+    box-shadow: $shadow;
+    background-color: $color-primary-dark;
+  }
+
+  &__content {
+    font-size: 16px;
+  }
+
+  &__closeButton {
+    @include button;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0;
+  }
+}
