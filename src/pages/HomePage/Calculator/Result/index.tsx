@@ -35,11 +35,11 @@ const Result = ({
           <p className="result__content">
             {`${amountValue} ${localCurrency} equals ${endResult} ${externalCurrency}`}
           </p>
-          <p>{`Rate: ${(data?.rates[localCurrency]).toFixed(
-            5
-          )} ${localCurrency} - ${(data?.rates[externalCurrency]).toFixed(
-            5
-          )} ${externalCurrency}`}</p>
+          <p className="result__rates">{`Rate: ${(data?.rates[
+            localCurrency
+          ]).toFixed(5)} ${localCurrency} - ${(data?.rates[
+            externalCurrency
+          ]).toFixed(5)} ${externalCurrency}`}</p>
           <button className="result__closeButton" onClick={handleClear}>
             Close
           </button>
