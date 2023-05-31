@@ -1,6 +1,6 @@
 .result {
   padding: 40px;
-  margin: 0 auto;
+  margin: 10px auto;
 
   &__box {
     border-radius: $border;
@@ -11,15 +11,19 @@
 
   &__title {
     margin: 20px;
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: $border;
+    padding: 10px;
     box-shadow: $shadow;
+    border-radius: $border;
     background-color: $color-primary-dark;
   }
 
   &__content {
     font-size: 16px;
+  }
+
+  &__rates {
+    margin: 20px;
+    font-size: 12px;
   }
 
   &__closeButton {
