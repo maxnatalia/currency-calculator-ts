@@ -1,4 +1,9 @@
-const Source = () => {
+import { FetchData } from "../useFetchCurrencies";
+interface SourceProps {
+  data: FetchData;
+}
+
+const Source = ({ data }: SourceProps) => {
   return (
     <p className="source">
       The currency exchange rates were fetched from{" "}
@@ -9,7 +14,8 @@ const Source = () => {
         rel="noopener noreferrer"
       >
         exchangerate.host
-      </a>
+      </a>{" "}
+      on {data.date}
     </p>
   );
 };
