@@ -1,0 +1,15 @@
+@import "./common/styles/variables";
+@import "./common/styles/basic";
+@import "./common/styles/mixins";
+@import "./common/styles/typography";
+@import "./common/Navigation/styles.scss";
+@import "./common/Footer/styles.scss";
+@import "./common/Loader/styles.scss";
+@import "./common/MainContainer/styles.scss";
+
+@import "./pages/AboutPage/styles.scss";
+@import "./pages/ErrorPage/styles.scss";
+@import "./pages/HomePage/Calculator/Clock/styles.scss";
+@import "./pages/HomePage/Calculator/Form/styles.scss";
+@import "./pages/HomePage/Calculator/Result/styles.scss";
+@import "./pages/HomePage/Calculator/Source/styles.scss";
