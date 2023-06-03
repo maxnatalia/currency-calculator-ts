@@ -1,0 +1,56 @@
+.form {
+  padding: 40px;
+
+  &__fieldset {
+    border-radius: $border;
+    box-shadow: $shadow;
+  }
+
+  &__legend {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+
+  &__labelField {
+    @include labelField;
+  }
+
+  &__input,
+  &__select {
+    @include fieldBox;
+  }
+
+  &__labelContent {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 767px) {
+      align-items: center;
+    }
+  }
+
+  &__buttonsBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    @include button;
+
+    &--disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
