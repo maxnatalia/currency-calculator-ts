@@ -1,6 +1,6 @@
-# 💰 Currency Calculator 💰
+# 💰Currency Calculator💰
 
-Currency Calculator is a web application built using **React, TypeScript, React Query, and SCSS.** It allows users to convert their local currency to any other currency based on the exchange rate obtained from the **[Exchangerate API](https://exchangerate.host/#/)**. The application also includes **custom hooks** for handling data fetching and manipulation.
+Currency Calculator is a web application built using **React, TypeScript, React Query, React Router and SCSS.** It allows users to convert their local currency to any other currency based on the exchange rate obtained from the **[Exchangerate API](https://exchangerate.host/#/)**. The application also includes **custom hooks** for handling data fetching and manipulation.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -33,13 +33,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Responsive Web Design🖥️📱
 - Fetches currency exchange rates from the **[Exchangerate API](https://exchangerate.host/#/)**
 - Allows users to select their local currency💶
-- About page providing information about the author and the history of the application
+- About page providing information about the author and the history of the application - using **React Router**
 - **Loading indicators** for a smooth user experience
 - **Error handling** for handling unexpected issues
 
 ## 📌About
 
-The Currency Calculator application was developed as a personal project to demonstrate the use of **React, TypeScript, React Query, and SCSS** in building a currency conversion application.
+The Currency Calculator application was developed as a personal project to demonstrate the use of **React, TypeScript, React Query, React Router and SCSS** in building a currency conversion application.
 
 The project's aim was to provide a simple and user-friendly interface for converting currencies using live exchange rates.
 
