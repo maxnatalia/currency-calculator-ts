@@ -1,4 +1,4 @@
-# 💰Currency Calculator💰
+# 💰Currency Calculator
 
 Currency Calculator is a web application built using **React, TypeScript, React Query, React Router and SCSS.** It allows users to convert their local currency to any other currency based on the exchange rate obtained from the **[Exchangerate API](https://exchangerate.host/#/)**. The application also includes **custom hooks** for handling data fetching and manipulation.
 
