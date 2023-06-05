@@ -2,14 +2,13 @@ import { ChangeEvent } from "react";
 
 interface FieldProps<T> {
   heading: string;
-  extraContent?: string;
   fieldProps: T;
 }
 
 interface SelectProps {
   options: { [key: string]: number };
   name: string;
-  defaultValue: string;
+  value: string;
   readOnly: boolean;
   onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
 }
@@ -28,14 +27,12 @@ interface InputProps {
 
 const Field = <T extends SelectProps | InputProps>({
   heading,
-  extraContent,
   fieldProps,
 }: FieldProps<T>) => {
   return (
     <label className="form__labelField">
       <div className="form__labelContent">
         <h3>{heading}</h3>
-        <p>{extraContent}</p>
       </div>
       {"options" in fieldProps ? (
         <select
