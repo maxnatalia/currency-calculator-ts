@@ -1,5 +1,5 @@
 .result {
-  padding: 40px;
+  padding: 0 40px;
   margin: 10px auto;
 
   &__box {
@@ -19,6 +19,7 @@
 
   &__content {
     font-size: 16px;
+    margin: 20px;
   }
 
   &__rates {
@@ -32,6 +33,7 @@
 
   @media (max-width: 767px) {
     width: 100%;
+    margin-top: 20px;
     padding: 0;
   }
 }
