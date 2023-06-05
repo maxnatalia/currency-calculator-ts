@@ -31,18 +31,15 @@
     }
   }
 
-  &__buttonsBox {
+  &__buttonBox {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-
-    @media (max-width: 767px) {
-      flex-direction: column;
-    }
   }
 
   &__button {
     @include button;
+    min-width: 50%;
 
     &--disabled {
       opacity: 0.5;
