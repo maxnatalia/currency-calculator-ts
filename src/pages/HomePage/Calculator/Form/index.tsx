@@ -1,4 +1,4 @@
-import { FormEvent, ChangeEvent, MouseEvent } from "react";
+import { FormEvent, ChangeEvent } from "react";
 import Field from "./Field";
 import { FetchData } from "../useFetchCurrencies";
 import { ResultProps } from "../useResult";
@@ -6,7 +6,6 @@ import { ResultProps } from "../useResult";
 interface FormProps {
   data: FetchData;
   onFormSubmit: (e: FormEvent<HTMLFormElement>) => void;
-  handleClear: (e: MouseEvent<HTMLButtonElement>) => void;
   localCurrency: string;
   externalCurrency: string;
   handleLocalCurrencyChange: (e: ChangeEvent<HTMLSelectElement>) => void;
@@ -19,7 +18,6 @@ interface FormProps {
 const Form = ({
   data,
   onFormSubmit,
-  handleClear,
   localCurrency,
   externalCurrency,
   handleLocalCurrencyChange,
@@ -34,13 +32,10 @@ const Form = ({
         <legend className="form__legend">Currency Calculator</legend>
         <Field
           heading="Local Currency:"
-          extraContent={`Rate: ${(data?.rates[localCurrency]).toFixed(
-            5
-          )} ${localCurrency}`}
           fieldProps={{
             name: "localCurrency",
             options: data?.rates,
-            defaultValue: localCurrency,
+            value: localCurrency,
             onChange: handleLocalCurrencyChange,
             readOnly: !!result,
           }}
@@ -61,26 +56,20 @@ const Form = ({
         />
         <Field
           heading="Foreign Currency:"
-          extraContent={`Rate: ${(data?.rates[externalCurrency]).toFixed(
-            5
-          )} ${externalCurrency}`}
           fieldProps={{
             name: "externalCurrency",
             options: data?.rates,
-            defaultValue: externalCurrency,
+            value: externalCurrency,
             onChange: handleExternalCurrencyChange,
             readOnly: !!result,
           }}
         />
-        <div className="form__buttonsBox">
+        <div className="form__buttonBox">
           {!result && (
             <button className="form__button" type="submit">
               Count now!
             </button>
           )}
-          <button className="form__button" type="reset" onClick={handleClear}>
-            Clear
-          </button>
         </div>
       </fieldset>
     </form>
