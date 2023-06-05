@@ -15,6 +15,7 @@ const Source = ({ data }: SourceProps) => {
       >
         exchangerate.host
       </a>{" "}
+      <br />
       on {data.date}
     </p>
   );
