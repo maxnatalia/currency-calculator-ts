@@ -2,7 +2,7 @@
   padding: 40px;
 
   &__paragraph {
-    padding: 10px 5px;
+    padding: 10px 0;
     line-height: 2.1;
   }
 
@@ -11,6 +11,6 @@
   }
 
   @media (max-width: 767px) {
-    padding: 10px;
+    padding: 0;
   }
 }
