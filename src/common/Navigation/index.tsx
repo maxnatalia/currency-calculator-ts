@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom";
-import moneyIcon from "./money-icon.png";
 
 const Navigation = () => {
   return (
     <nav className="nav">
-      <img className="nav__logo" src={moneyIcon} alt="money icon" />
+      <span className="nav__logo">💵</span>
       <p className="nav__title">Currency Calculator</p>
       <div className="nav__box">
         <NavLink
