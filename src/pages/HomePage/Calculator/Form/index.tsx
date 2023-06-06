@@ -1,7 +1,7 @@
 import { FormEvent, ChangeEvent } from "react";
-import Field from "./Field";
 import { FetchData } from "../useFetchCurrencies";
 import { ResultProps } from "../useResult";
+import Field from "./Field";
 
 interface FormProps {
   data: FetchData;
