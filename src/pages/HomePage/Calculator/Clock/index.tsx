@@ -1,18 +1,8 @@
+import { formatDate } from "./formatDate";
 import { useCurrentDate } from "./useCurrentDate";
 
 const Clock = () => {
   const { currentDate } = useCurrentDate();
-
-  const formatDate = (date: Date) => {
-    return date.toLocaleString(undefined, {
-      weekday: "long",
-      day: "numeric",
-      month: "long",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    });
-  };
 
   return (
     <div className="clock">
