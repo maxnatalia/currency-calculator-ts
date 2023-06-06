@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { toAbout, toHome } from "../../routes";
 
 const Navigation = () => {
   return (
@@ -7,7 +8,7 @@ const Navigation = () => {
       <p className="nav__title">Currency Calculator</p>
       <div className="nav__box">
         <NavLink
-          to="/"
+          to={toHome()}
           className={({ isActive }) =>
             isActive ? "nav__box-link--active" : "nav__box-link"
           }
@@ -15,12 +16,12 @@ const Navigation = () => {
           Home
         </NavLink>
         <NavLink
-          to="/about"
+          to={toAbout()}
           className={({ isActive }) =>
             isActive ? "nav__box-link--active" : "nav__box-link"
           }
         >
-          About Author
+          About
         </NavLink>
       </div>
     </nav>
