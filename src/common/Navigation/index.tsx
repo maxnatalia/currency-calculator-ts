@@ -10,7 +10,7 @@ const Navigation = () => {
         <NavLink
           to={toHome()}
           className={({ isActive }) =>
-            isActive ? "nav__box-link--active" : "nav__box-link"
+            isActive ? "nav__boxLink nav__boxLink--active" : "nav__boxLink"
           }
         >
           Home
@@ -18,7 +18,7 @@ const Navigation = () => {
         <NavLink
           to={toAbout()}
           className={({ isActive }) =>
-            isActive ? "nav__box-link--active" : "nav__box-link"
+            isActive ? "nav__boxLink nav__boxLink--active" : "nav__boxLink"
           }
         >
           About
