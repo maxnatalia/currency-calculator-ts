@@ -13,7 +13,7 @@
     }
   }
 
-  &__address-link {
+  &__address {
     margin-left: 40px;
     padding: 20px;
     text-align: center;
@@ -30,8 +30,8 @@
     }
   }
 
-  &__address-link:hover,
-  &__address-link:active {
+  &__link:hover,
+  &__link:active {
     color: $color-primary-dark;
     transform: scale(1.1);
   }
@@ -40,18 +40,18 @@
     padding: 16px;
   }
 
-  &__box-link {
+  &__boxLink {
     text-decoration: none;
   }
 
-  &__box-icon {
+  &__boxIcon {
     margin: 10px;
     color: $color-grey-dark;
     transition: $transition;
   }
 
-  &__box-icon:hover,
-  &__box-icon:active {
+  &__boxIcon:hover,
+  &__boxIcon:active {
     color: $color-grey-medium;
     transform: translateY(-3px);
   }

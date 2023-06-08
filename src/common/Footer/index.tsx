@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <address className="footer__address">
         <a
-          className="footer__address-link"
+          className="footer__link"
           title="nataliamazur1988@gmail.com"
           href="mailto:nataliamazur1988@gmail.com"
         >
@@ -14,22 +14,22 @@ const Footer = () => {
         </a>
         <div className="footer__box">
           <a
-            className="footer__box-link"
+            className="footer__boxLink"
             target="_blank"
             rel="noreferrer"
             href="https://github.com/maxnatalia"
             title="Github"
           >
-            <GithubIcon className="footer__box-icon" />
+            <GithubIcon className="footer__boxIcon" />
           </a>
           <a
-            className="footer__box-link"
+            className="footer__boxLink"
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/natalia-mazur-%C5%BCurek-136a35254/"
             title="LinkedIn"
           >
-            <LinkedInIcon className="footer__box-icon" />
+            <LinkedInIcon className="footer__boxIcon" />
           </a>
         </div>
       </address>
